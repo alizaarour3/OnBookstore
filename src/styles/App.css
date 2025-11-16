@@ -1,0 +1,132 @@
+/* Custom Styles */
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+.card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+  
+  .btn-lg {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* Book Card Styles */
+.book-card {
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  border-color: #007bff;
+}
+
+.hover-effect:hover {
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+}
+
+/* Card image hover effect */
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover .card-img-top {
+  transform: scale(1.03);
+}
+
+/* Button hover effects */
+.btn-outline-primary:hover {
+  transform: scale(1.05);
+}
+
+.btn-primary:not(:disabled):hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,123,255,0.3);
+}
+
+/* Badge animations */
+.badge {
+  transition: all 0.3s ease;
+}
+
+.badge:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .book-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+}
+
+/* Loading state for images */
+.card-img-top {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Price styling */
+.text-success {
+  color: #28a745 !important;
+  font-weight: bold;
+}
+
+/* Rating stars */
+.text-warning {
+  color: #ffc107 !important;
+}
